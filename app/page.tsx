@@ -1,4 +1,6 @@
 import Image, { StaticImageData } from "next/image";
+import { AiOutlineSearch, AiOutlineHeart } from 'react-icons/ai'
+import { SlArrowDown } from 'react-icons/sl'
 
 const content = {
   header: {
@@ -153,25 +155,15 @@ const News = () => {
         </div>
       </section>
       
-      <section className="flex flex-col items-center gap-16 border-b-neutral-200 border-b-2 py-4 h-full">
-        <div>
-          <h2>
-            Sharing the best of the Amsterdam Area
-          </h2>
-          <h1>
-            I amsterdam on Instagram
-          </h1>
-          <ul>
-            <li>
-              Stay up-to-date on events and happenings
-            </li>
-            <li>
-              Get inspiration for things to do and see
-            </li>
-            <li>
-              Discover hidden gems
-            </li>
-          </ul>
+      <section className="flex border-b-neutral-200 border-b-2 px-2 py-24 h-full relative">
+        <div className="h-[25rem] w-screen bg-neutral-100 flex">
+          <div className="w-1/2 h-full pl-6">
+            <div className="bg-red-500 h-full w-auto aspect-square"></div>
+          </div>
+          <div className="w-1/2 h-full flex justify-center flex-col">
+            <h2>Sharing the best of the Amsterdam Area</h2>
+            <h1 className='font-bold text-5xl'><span className="text-red-600">I am</span>sterdam on Instagram</h1>
+          </div>
         </div>
       </section>
     </article>
@@ -191,16 +183,24 @@ const Navbar = () => {
           </div>
         </li>
         
-        <li className="font-semibold"><a href="/">What's on</a></li>
-        <li className="font-semibold"><a href="/">See and do</a></li>
-        <li className="font-semibold"><a href="/">Travel and stay</a></li>
-        <li className="font-semibold"><a href="/">City Card and tickets</a></li>
+        <li className="font-semibold flex gap-2 items-center"><a href="/">What's on</a><SlArrowDown/></li>
+        <li className="font-semibold flex gap-2 items-center"><a href="/">See and do</a><SlArrowDown/></li>
+        <li className="font-semibold flex gap-2 items-center"><a href="/">Travel and stay</a><SlArrowDown/></li>
+        <li className="font-semibold flex gap-2 items-center"><a href="/">City Card and tickets</a><SlArrowDown/></li>
       </ul>
 
       <ul className="flex gap-8 items-center h-full text-md">
         <li className="font-semibold bg-blue-600 text-white px-6 py-3 rounded-3xl"><a href="/">Order your City Card</a></li>
-        <li className="font-semibold bg-neutral-100 rounded-full w-10 aspect-square h-auto grid place-items-center"><a href="/">F</a></li>
-        <li className="font-semibold bg-neutral-100 rounded-full w-10 aspect-square h-auto grid place-items-center"><a href="/">S</a></li>
+        <li className="font-semibold bg-neutral-100 rounded-full w-10 aspect-square h-auto grid place-items-center">
+          <a href="/">
+            <AiOutlineHeart />
+          </a>
+        </li>
+        <li className="font-semibold bg-neutral-100 rounded-full w-10 aspect-square h-auto grid place-items-center">
+          <a href="/">
+            <AiOutlineSearch />
+          </a>
+        </li>
       </ul>
     </nav>
   );
@@ -221,6 +221,77 @@ const Top = () => {
   );
 };
 
+const Footer = () => {
+  return(
+    <footer className="bg-black w-screen min-h-[30rem] flex flex-col gap-16 px-4 py-16 text-white">
+      
+      <div className="w-full h-full grid grid-cols-5 grid-rows-2 gap-x-8">
+        <div className="flex flex-col text-xl">
+          <h1 className="font-bold">I amsterdam.</h1>
+          <h2 className="font-medium text-neutral-400">Discover Amsterdam</h2>
+        </div>
+        <div>
+          <div className="border-[1px] border-white w-full h-max py-3 grid place-items-center rounded-md">
+            <a>Discover Amsterdam</a>
+          </div>
+        </div>
+        <div>
+          <div className="border-[1px] border-white w-full h-max py-3 grid place-items-center rounded-md">
+            <a>Meetings and Conventions</a>
+          </div>
+        </div>
+        <div>
+          <div className="border-[1px] border-white w-full h-max py-3 grid place-items-center rounded-md">
+            <a>Business</a>
+          </div>
+        </div>
+        <div>
+          <div className="border-[1px] border-white w-full h-max py-3 grid place-items-center rounded-md">
+            <a>Live, Work, and Study</a>
+          </div>
+        </div>
+        
+        <div className="flex flex-col gap-2">
+          <h1 className="font-semibold"> Follow us </h1>
+          <ul className="flex flex-col gap-2">
+            <li> Facebook </li>
+            <li> Twitter </li>
+            <li> Instagram </li>
+            <li> TikTok </li>
+            <li> Youtube </li>
+          </ul>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h1 className="font-semibold"> About us </h1>
+          <ul className="flex flex-col gap-2">
+            <li> Amsterdam & Partners </li>
+            <li> Partership and Advertising </li>
+            <li> Vacancies and Internship </li>
+            <li> Contact Us </li>
+          </ul>
+        </div>
+        
+        <div className="flex flex-col gap-2">
+          <h1 className="font-semibold"> Our Products </h1>
+          <ul className="flex flex-col gap-2">
+            <li> I amsterdam City Card </li>
+            <li> Canal Cruise Ticket </li>
+            <li> Products and Services </li>
+            <li> I amsterdam Store </li>
+            <li> I amsterdam Webshop </li>
+          </ul>
+        </div>
+      </div>
+      <ul className="flex gap-8 text-neutral-400 text-sm">
+        <li>© 2023 I amsterdam</li>
+        <li>Cookie Declaration</li>
+        <li>Privacy Statement</li>
+        <li>Disclaimer</li>
+      </ul>
+      
+    </footer>
+  )
+}
 const Home = () => {
   return (
     <div className='w-screen h-full overflow-x-hidden'>
@@ -228,6 +299,7 @@ const Home = () => {
       <Navbar />
       <Header />
       <News />
+      <Footer/>
     </div>
   );
 };
