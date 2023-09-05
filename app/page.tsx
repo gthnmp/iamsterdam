@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
-import { AiOutlineSearch, AiOutlineHeart } from 'react-icons/ai'
+import { AiOutlineSearch, AiOutlineHeart, AiOutlineCheck, AiFillFacebook, AiFillYoutube, AiFillTwitterCircle,  } from 'react-icons/ai'
 import { SlArrowDown } from 'react-icons/sl'
+import {BsArrowRight, BsTiktok, BsInstagram} from 'react-icons/bs'
 
 const content = {
   header: {
@@ -155,16 +156,24 @@ const News = () => {
         </div>
       </section>
       
-      <section className="flex border-b-neutral-200 border-b-2 px-2 py-24 h-full relative">
-        <div className="h-[25rem] w-screen bg-neutral-100 flex">
-          <div className="w-1/2 h-full pl-6">
-            <div className="bg-red-500 h-full w-auto aspect-square"></div>
-          </div>
-          <div className="w-1/2 h-full flex justify-center flex-col">
-            <h2>Sharing the best of the Amsterdam Area</h2>
-            <h1 className='font-bold text-5xl'><span className="text-red-600">I am</span>sterdam on Instagram</h1>
+      <section className="flex border-b-neutral-200 border-b-2 p-16 gap-8 h-full relative">
+        
+        <div className="h-[30rem] w-auto aspect-square bg-red-600"></div>
+        
+        <div className='font-medium text-neutral-600 flex flex-col justify-center gap-4'>
+          <h2>Sharing the best of the Amsterdam Area </h2>
+          <h1 className="text-5xl font-bold text-black"><span className="text-red-600">I am</span>sterdam on Instagram </h1>
+          <ul>
+            <li className="flex gap-2 items-center"><AiOutlineCheck/>Stay up-to-date on events and happenings </li>
+            <li className="flex gap-2 items-center"><AiOutlineCheck/>Get inspiration for things to do and see</li>
+            <li className="flex gap-2 items-center"><AiOutlineCheck/>Discover hidden gems</li>
+          </ul>
+          <div className="bg-blue-500 font-bold text-white rounded-3xl w-max grid place-items-center p-4 text-sm">
+            <a>Follow</a>
           </div>
         </div>
+
+        
       </section>
     </article>
   )
@@ -223,12 +232,12 @@ const Top = () => {
 
 const Footer = () => {
   return(
-    <footer className="bg-black w-screen min-h-[30rem] flex flex-col gap-16 px-4 py-16 text-white">
+    <footer className="bg-black w-screen min-h-[30rem] flex flex-col gap-16 px-16 py-16 text-white">
       
       <div className="w-full h-full grid grid-cols-5 grid-rows-2 gap-x-8">
         <div className="flex flex-col text-xl">
           <h1 className="font-bold">I amsterdam.</h1>
-          <h2 className="font-medium text-neutral-400">Discover Amsterdam</h2>
+          <h2 className="font-normal text-sm text-neutral-400">Discover Amsterdam</h2>
         </div>
         <div>
           <div className="border-[1px] border-white w-full h-max py-3 grid place-items-center rounded-md">
@@ -254,11 +263,11 @@ const Footer = () => {
         <div className="flex flex-col gap-2">
           <h1 className="font-semibold"> Follow us </h1>
           <ul className="flex flex-col gap-2">
-            <li> Facebook </li>
-            <li> Twitter </li>
-            <li> Instagram </li>
-            <li> TikTok </li>
-            <li> Youtube </li>
+            <li className='flex gap-2 items-center'> <AiFillFacebook/>Facebook </li>
+            <li className='flex gap-2 items-center'> <AiFillTwitterCircle/> Twitter </li>
+            <li className='flex gap-2 items-center'> <BsInstagram/> Instagram </li>
+            <li className='flex gap-2 items-center'> <BsTiktok/> TikTok </li>
+            <li className='flex gap-2 items-center'> <AiFillYoutube/> Youtube </li>
           </ul>
         </div>
         <div className="flex flex-col gap-2">
