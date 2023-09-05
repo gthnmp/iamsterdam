@@ -234,7 +234,7 @@ const Footer = () => {
   return(
     <footer className="bg-black w-screen min-h-[30rem] flex flex-col gap-16 px-16 py-16 text-white">
       
-      <div className="w-full h-full grid grid-cols-5 grid-rows-2 gap-x-8">
+      <div className="w-full h-full grid grid-cols-5 grid-rows-[8rem_1fr] gap-x-8">
         <div className="flex flex-col text-xl">
           <h1 className="font-bold">I amsterdam.</h1>
           <h2 className="font-normal text-sm text-neutral-400">Discover Amsterdam</h2>
