@@ -4,13 +4,15 @@ import SwanLake from '@/public/assets/SwanLake.webp'
 import Art from '@/public/assets/Art.webp'
 import Rijskmuseum from '@/public/assets/Rijskmuseum.webp'
 import Nemomuseum from '@/public/assets/Sciencemuseum.webp'
+import AmsterdamArea from '@/public/assets/AmsterdamArea.webp'
 import { AiOutlineCheck, AiOutlineHeart } from 'react-icons/ai'
+import { BsArrowRight } from 'react-icons/bs';
 import {SlLocationPin} from 'react-icons/sl'
 import Link from 'next/link';
 
 interface StoryCardProps {
   title? : string;
-  src? : string | undefined;
+  src? : string | StaticImageData;
   date: string;
 }
 
@@ -26,10 +28,10 @@ interface NewsCardProps {
 const StoryCard = ({title, src, date}:StoryCardProps) => {
   return(
     <div className="w-[25rem] h-32 flex gap-4">
-      <div className="h-20 w-auto aspect-square bg-red-700 rounded-md">
+      <div className="h-20 w-auto aspect-square bg-red-700 rounded-md overflow-hidden">
         {
           src &&
-          <img src={src}/>
+          <Image src={src} alt="kontol" className='w-full h-full object-cover'/>
         }
       </div>
       <div className="flex flex-col">
@@ -95,18 +97,34 @@ const News = () => {
         </ul>
       </section>
       
-      <section className="flex flex-col items-center gap-16 border-b-neutral-200 border-b-2 py-4 h-full">
+      <section className="flex flex-col items-center gap-16 border-b-neutral-200 border-b-2 py-8 h-full">
         <div className="flex flex-col items-center">
           <h2>More than just the Canal Ring</h2>
           <h1 className="text-2xl font-bold">Explore all corners of Amsterdam</h1>
         </div>
         <div>
           <ul className="grid grid-flow-col gap-4">
-            <li>
-              <div className="aspect-square w-96 h-auto bg-red-700 rounded-md"/>
+            <li className="flex flex-col gap-2">
+              <div className="aspect-square w-96 h-auto bg-red-700 rounded-md">
+                <Image src={Amsterdam} alt="Neighboorhood" height={1920} width={1280} className='w-full h-full object-cover'/>
+              </div>
+              <div className='w-full h-max flex justify-between items-center'>
+                <span>
+                  Neighboorhood
+                </span>
+                <BsArrowRight />
+              </div>
             </li>
-            <li>
-              <div className="aspect-square w-96 h-auto bg-red-700 rounded-md"/>
+            <li className='flex flex-col gap-2'>
+              <div className="aspect-square w-96 h-auto bg-red-700 rounded-md">
+                <Image src={AmsterdamArea} alt="Neighboorhood" height={1920} width={1280} className='w-full h-full object-cover'/>
+              </div>
+              <div className='w-full h-max flex justify-between items-center'>
+                <span>
+                  Amsterdam Area
+                </span>
+                <BsArrowRight />
+              </div>
             </li>
           </ul>
         </div>
@@ -116,22 +134,22 @@ const News = () => {
         <h1 className="text-2xl font-bold">Our Latest Stories</h1>
         <ul className="grid grid-cols-3 grid-rows-2 gap-4">
           <li>
-            <StoryCard title="Weekend Guide (1 - 3 September)" date="November 9th, 2022"/>
+            <StoryCard title="Weekend Guide (1 - 3 September)" src={Amsterdam} date="November 9th, 2022"/>
           </li>
           <li>
-            <StoryCard title="Culture Guide (September 2023)" date="January 9th, 2023"/>
+            <StoryCard title="Culture Guide (September 2023)" src={Rijskmuseum} date="January 9th, 2023"/>
           </li>
           <li>
-            <StoryCard title="Music Guide (September 2023)" date="November 30th, 2022"/>
+            <StoryCard title="Music Guide (September 2023)" src={Art} date="November 30th, 2022"/>
           </li>
           <li>
-            <StoryCard title="Reasons to visit Amsterdam in Summer" date="November 30th, 2022"/>
+            <StoryCard title="Reasons to visit Amsterdam in Summer" src={Nemomuseum} date="November 30th, 2022"/>
           </li>
           <li>
-            <StoryCard title="Cultural tips for Amsterdam this Summer" date="November 30th, 2022"/>
+            <StoryCard title="Cultural tips for Amsterdam this Summer" src={SwanLake} date="November 30th, 2022"/>
           </li>
           <li>
-            <StoryCard title="Summer day trips from Amsterdam" date="November 30th, 2022"/>
+            <StoryCard title="Summer day trips from Amsterdam" src={AmsterdamArea} date="November 30th, 2022"/>
           </li>
         </ul>
       </section>
@@ -140,34 +158,19 @@ const News = () => {
         <h1 className="text-2xl font-bold">Discover Amsterdam with the I amsterdam City Card</h1>
         <ul className="grid grid-cols-3 grid-rows-1 gap-4">
           <li>
-            <StoryCard title="Explore All City Card activities" date="September 7th, 2022"/>
+            <StoryCard title="Reasons to visit Amsterdam in Summer" src={Nemomuseum} date="November 30th, 2022"/>
           </li>
           <li>
-            <StoryCard title="Canal cruise with the I amsterdam City Card" date="September 7th, 2022"/>
+            <StoryCard title="Cultural tips for Amsterdam this Summer" src={SwanLake} date="November 30th, 2022"/>
           </li>
           <li>
-            <StoryCard title="Hidden gems to visit with you I amsterdam City Card" date="September 7th, 2022"/>
+            <StoryCard title="Summer day trips from Amsterdam" src={AmsterdamArea} date="November 30th, 2022"/>
           </li>
         </ul>
       </section>
       
-      <section className="flex flex-col items-center gap-16 border-b-neutral-200 border-b-2 py-4 h-full">
-        <div className="flex flex-col items-center">
-          <h1 className="text-2xl font-bold">Our Network</h1>
-        </div>
-        <div>
-          <ul className="grid grid-flow-col gap-4">
-            <li>
-              <div className="aspect-square w-96 h-auto bg-red-700 rounded-md"/>
-            </li>
-            <li>
-              <div className="aspect-square w-96 h-auto bg-red-700 rounded-md"/>
-            </li>
-          </ul>
-        </div>
-      </section>
-      
       <section className="flex border-b-neutral-200 border-b-2 p-16 gap-8 h-full relative pointer-events-none select-none">
+        
         
         <div className="h-[30rem] w-auto aspect-square bg-red-600 rounded-md overflow-hidden">
           <Image src={Amsterdam} alt="Photography of the City of Amsterdam near the ring canal" width={1920} height={1080} className='w-full h-full object-cover'/>
@@ -185,8 +188,6 @@ const News = () => {
             <Link href={'https://www.instagram.com/iamsterdam/'} target='_blank'>Follow</Link>
           </div>
         </div>
-
-        
       </section>
     </article>
   )
