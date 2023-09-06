@@ -1,0 +1,103 @@
+
+{
+  "happeningContent": {
+    "headline": "What's Happening This Week",
+    "contents": [
+      {
+        "title": "The Swan Lake",
+        "thumbailSrc": "/assets/SwanLake.webp",
+        "alt": "Picture of a ballet show",
+        "location": "Royal Theatre Carre"
+      },
+      {
+        "title": "New Era, New Art",
+        "thumbailSrc": "/assets/Art.webp",
+        "alt": "Picture of art exhibition",
+        "location": "Jewish Museum"
+      },
+      {
+        "title": "Mission Masterpiece",
+        "thumbailSrc": "/assets/Rijskmuseum.webp",
+        "alt": "Picture of museum exhibition",
+        "location": "Rijksmuseum"
+      },
+      {
+        "title": "Summer Holidays at NEMO Science Museum",
+        "thumbailSrc": "/assets/Sciencemuseum.webp",
+        "alt": "Picture of science museum",
+        "location": "NEMO Science Museum"
+      }
+    ]
+  },
+  "amsterdamAreasContent": {
+    "headline": "Explore all corners of amsterdam",
+    "subHeadline": "More than just The Canal Ring",
+    "items": [
+      {
+        "name": "Neighborhood",
+        "thumbnail": "/assets/amsterdam.webp",
+        "alt": "Picture of an Amsterdam neighborhood"
+      },
+      {
+        "name": "Amsterdam Areas",
+        "thumbnail": "/assets/AmsterdamArea.webp",
+        "alt": "Picture of a random area in Amsterdam"
+      }
+    ]
+  },
+  "stories": {
+    "title": "Our Latest Stories",
+    "items": [
+      {
+        "title": "Weekend Guide (1 - 3 September)",
+        "src": "/assets/amsterdam.webp",
+        "date": "November 9th, 2022"
+      },
+      {
+        "title": "Culture Guide (September 2023)",
+        "src": "/assets/Rijskmuseum.webp",
+        "date": "January 9th, 2023"
+      },
+      {
+        "title": "Music Guide (September 2023)",
+        "src": "/assets/Art.webp",
+        "date": "November 30th, 2022"
+      },
+      {
+        "title": "Reasons to visit Amsterdam in Summer",
+        "src": "/assets/Sciencemuseum.webp",
+        "date": "November 30th, 2022"
+      },
+      {
+        "title": "Cultural tips for Amsterdam this Summer",
+        "src": "/assets/SwanLake.webp",
+        "date": "November 30th, 2022"
+      },
+      {
+        "title": "Summer day trips from Amsterdam",
+        "src": "/assets/AmsterdamArea.webp",
+        "date": "November 30th, 2022"
+      }
+    ]
+  },
+  "discoverAmsterdam": {
+    "title": "Discover Amsterdam with the I amsterdam City Card",
+    "items": [
+      {
+        "title": "Reasons to visit Amsterdam in Summer",
+        "src": "/assets/amsterdam.webp",
+        "date": "November 30th, 2022"
+      },
+      {
+        "title": "Cultural tips for Amsterdam this summer",
+        "src": "/assets/Rijskmuseum.webp",
+        "date": "November 30th, 2022"
+      },
+      {
+        "title": "Summer day trips from Amsterdam",
+        "src": "/assets/Art.webp",
+        "date": "November 30th, 2022"
+      }
+    ]
+  }
+}
