@@ -2,7 +2,7 @@ const content = {
   header: {
     title: ["Discover", "Amsterdam"],
     paragraph: "I amsterdam is the official guide to everything Amsterdam. Find all the resources you need for the perfect trip, look up essential information on living, studying and working in the Amsterdam Area, and learn how to start a business in our beautiful city",
-    heroImage: "/hero.webp"
+    heroImage: "/assets/hero.webp"
   }
 }
 const Header = () => {
