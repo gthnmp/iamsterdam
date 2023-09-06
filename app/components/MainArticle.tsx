@@ -1,12 +1,26 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Amsterdam from '@/public/assets/amsterdam.webp'
-import { AiOutlineCheck } from 'react-icons/ai'
+import SwanLake from '@/public/assets/SwanLake.webp'
+import Art from '@/public/assets/Art.webp'
+import Rijskmuseum from '@/public/assets/Rijskmuseum.webp'
+import Nemomuseum from '@/public/assets/Sciencemuseum.webp'
+import { AiOutlineCheck, AiOutlineHeart } from 'react-icons/ai'
+import {SlLocationPin} from 'react-icons/sl'
 import Link from 'next/link';
 
 interface StoryCardProps {
   title? : string;
   src? : string | undefined;
   date: string;
+}
+
+interface NewsCardProps {
+  title? : string;
+  src : string | StaticImageData; 
+  alt : string;
+  date_start?: string;
+  date_end? : string;
+  location?: string;
 }
 
 const StoryCard = ({title, src, date}:StoryCardProps) => {
@@ -26,26 +40,57 @@ const StoryCard = ({title, src, date}:StoryCardProps) => {
   )
 }
 
+const NewsCard = ({title, src, alt, location}:NewsCardProps) => {
+  
+  const Date = ({day, month, year} : {day:string | number, month:string, year?:number}) => {
+    return(
+      <div className='flex flex-col items-center leading-tight'>
+        <span className="font-bold">{day}</span>
+        <span className="font-normal">{month}</span>
+      </div>
+    )
+  }
+  
+  return(
+    <div className="flex flex-col gap-2">
+      <div className="aspect-video w-80 h-auto bg-red-700 rounded-md overflow-hidden relative">
+        <button className="absolute bg-black right-0 p-4 bg-opacity-70 rounded-bl-md">
+          <AiOutlineHeart className="fill-white w-full h-full scale-110 hover:scale-150 transition-all duration-300"/>
+        </button>
+        <div className="absolute bg-white left-2 bottom-2 px-4 py-2 rounded-tr-md rounded-bl-md font-semibold flex items-center gap-2">
+          <Date day={"02"} month='Sep'/>
+          -
+          <Date day={"17"} month='Sep'/>
+        </div>
+        <Image draggable={false} src={src} alt={alt} width={1080} height={1920} className='w-full h-full object-cover' />
+      </div>
+      <div className="flex flex-col gap-1">
+        <h1 className="font-semibold">{title}</h1>
+        <div className="font-normal text-neutral-400 flex gap-2 items-center text-sm">
+          <SlLocationPin/> {location} 
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const News = () => {
   return(
     <article className='w-screen h-full px-4'>
-      <section className="flex flex-col gap-4 border-b-neutral-200 border-b-2 py-4">
+      <section className="flex flex-col gap-8 border-b-neutral-200 border-b-2 py-4">
         <h1 className="text-2xl font-bold">What&apos;s <span className="text-red-600">happening</span> this week</h1>
         <ul className="grid grid-flow-col gap-4">
           <li>
-            <div className="aspect-[3/4] w-60 h-auto bg-red-700 rounded-md"/>
+            <NewsCard title="The Swan Lake" src={SwanLake} alt="kontol" location='Royal Theatre Carre'/>
           </li>
           <li>
-            <div className="aspect-[3/4] w-60 h-auto bg-red-700 rounded-md"/>
+            <NewsCard title="New Era, New Art" src={Art} alt="kontol" location='Jewish Museum'/>
           </li>
           <li>
-            <div className="aspect-[3/4] w-60 h-auto bg-red-700 rounded-md"/>
+            <NewsCard title="Mission Masterpiece" src={Rijskmuseum} alt="kontol" location='Rijksmuseum'/>
           </li>
           <li>
-            <div className="aspect-[3/4] w-60 h-auto bg-red-700 rounded-md"/>
-          </li>
-          <li>
-            <div className="aspect-[3/4] w-60 h-auto bg-red-700 rounded-md"/>
+            <NewsCard title="Summer Holidays at NEMO Science Museum" src={Nemomuseum} alt="kontol" location='NEMO Science Museum'/>
           </li>
         </ul>
       </section>
@@ -95,7 +140,7 @@ const News = () => {
         <h1 className="text-2xl font-bold">Discover Amsterdam with the I amsterdam City Card</h1>
         <ul className="grid grid-cols-3 grid-rows-1 gap-4">
           <li>
-            <StoryCard title="Explore All City Card activities"/>
+            <StoryCard title="Explore All City Card activities" date="September 7th, 2022"/>
           </li>
           <li>
             <StoryCard title="Canal cruise with the I amsterdam City Card" date="September 7th, 2022"/>
