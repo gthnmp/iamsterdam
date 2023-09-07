@@ -10,7 +10,6 @@ const Top = () => {
         <li><a href="/">Business</a></li>
         <li><a href="/">Live, Work, and Study</a></li>
       </ul>
-
       <button className="font-medium">English</button>
     </div>
   );
@@ -20,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <Top/>
-      <nav className="sticky h-28 border-b-neutral-200 border-b-2 px-4 bg-white flex justify-between w-screen z-50">
+      <nav className="sticky top-0 h-28 border-b-neutral-200 border-b-2 px-4 bg-white flex justify-between w-screen z-50">
         <ul className="flex gap-8 items-center h-full text-md">
           <li className="font-bold">
             <div className="text-lg">
@@ -54,6 +53,5 @@ const Navbar = () => {
     </>
   );
 };
-
 
 export default Navbar 

@@ -7,6 +7,7 @@ import homeContents from '@/app/contents/home.json'
 
 const News = () => {
   const { happeningContent, amsterdamAreasContent, stories, discoverAmsterdam } = homeContents
+  
   return(
     <article className='w-screen h-full px-4'>
       <MediumSizedGroup content={happeningContent}/>

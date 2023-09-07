@@ -2,6 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { openSans } from './fonts'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,8 +22,10 @@ export default function RootLayout({
       <head>
         <link rel='icon' href="/assets/Icon.png" type="image/png" sizes='<generated>'/>
       </head>
-      <body className={`${inter.className} ${openSans.variable} font-sans`}>
+      <body className={`${inter.className} ${openSans.variable} font-sans relative`}>
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   )
