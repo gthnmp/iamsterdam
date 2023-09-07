@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { AiOutlineSearch, AiOutlineHeart  } from 'react-icons/ai'
 import { SlArrowDown } from 'react-icons/sl'
 
@@ -21,16 +22,18 @@ const Navbar = () => {
       <Top/>
       <nav className="sticky top-0 h-28 border-b-neutral-200 border-b-2 px-4 bg-white flex justify-between w-screen z-50">
         <ul className="flex gap-8 items-center h-full text-md">
-          <li className="font-bold">
+          <li className="font-bold" >
+            <Link href="/">
             <div className="text-lg">
               <span className="text-red-500">I am</span>sterdam
             </div>
             <div>
               <p className="font-light text-xs text-neutral-600">Discover Amsterdam</p>
             </div>
+            </Link>
           </li>
           
-          <li className="font-semibold flex gap-2 items-center"><a href="/">What's on</a><SlArrowDown/></li>
+          <li className="font-semibold flex gap-2 items-center"><Link href="/whats-on">What's on</Link><SlArrowDown/></li>
           <li className="font-semibold flex gap-2 items-center"><a href="/">See and do</a><SlArrowDown/></li>
           <li className="font-semibold flex gap-2 items-center"><a href="/">Travel and stay</a><SlArrowDown/></li>
           <li className="font-semibold flex gap-2 items-center"><a href="/">City Card and tickets</a><SlArrowDown/></li>
