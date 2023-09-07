@@ -22,7 +22,7 @@ const SmallSizedGroup: React.FC<Prop> = ({ content, gridSize = 6 }) => {
   const numRows = Math.ceil(gridSize / 3)
   return(
     <section className="flex flex-col gap-4 border-b-neutral-200 border-b-2 py-4">
-      <h1 className="text-2xl font-bold">Our Latest Stories</h1>
+      <h1 className="text-2xl font-bold">{content.title}</h1>
       <ul className={`grid grid-cols-3 grid-rows-${numRows} gap-4`}>
         {content.items.map((item, index) => (
           <li key={index}>

@@ -22,7 +22,6 @@ const MediumSizedGroup: React.FC<MediumSizedGroupProps> = ({ content }) => {
     <section className="flex flex-col gap-8 border-b-neutral-200 border-b-2 py-4">
       <h1 className="text-2xl font-bold">
         {content.headline}
-        <span className="text-red-600"> happening</span> this week
       </h1>
       <ul className="grid grid-flow-col gap-4">
         {content.contents.map((event, index) => (

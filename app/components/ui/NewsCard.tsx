@@ -36,9 +36,12 @@ const NewsCard = ({title, src, alt, location}:NewsCardProps) => {
       </div>
       <div className="flex flex-col gap-1">
         <h1 className="font-semibold">{title}</h1>
-        <div className="font-normal text-neutral-400 flex gap-2 items-center text-sm">
-          <SlLocationPin/> {location} 
-        </div>
+        {
+          location &&
+          <div className="font-normal text-neutral-400 flex gap-2 items-center text-sm">
+            <SlLocationPin/> {location} 
+          </div>
+        }
       </div>
     </div>
   )
