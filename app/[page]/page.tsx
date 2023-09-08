@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import MediumSizedGroup from '../components/ui/group/MediumSizedGroup';
 import LargeSizedGroup from '../components/ui/group/LargeSizedGroup';
 import SmallSizedGroup from '../components/ui/group/SmallSizedGroup';
-import PromotionSection from '../components/ui/InstagramSection';
+import PromotionSection from '../components/ui/PromotionSection';
 
 const typeToComponent = {
   Header: Header,
