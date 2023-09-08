@@ -1,0 +1,113 @@
+[
+  {
+    "name":"headline",
+    "type":"Header",
+    "content":{
+      "title": ["See", "and do"],
+      "paragraph":"With world-class museums, quirky festivals, theatre, live music, laid-back bars and delightful restaurants, there's never a shortage of things to do in Amsterdam! Take in an exhibition at a famous museum, relax in one of the parks or go on a canal cruise. And don't miss ticking off the top 20 things to do in Amsterdam!",
+      "heroImageSrc": "/assets/Rijskmuseum.webp",
+      "heroImageAlt": "Photography of a painting of Van Gogh in a museum",
+      "heroImageDimension":[1280, 1920]
+    }
+  },
+
+  {
+    "name":"suggestions",
+    "type":"LargeSizedGroup",
+    "content":{
+      "headline": "Things to do in Amsterdam!",
+      "items": [
+        {
+          "name": "Neighborhood",
+          "thumbnail": "/assets/amsterdam.webp",
+          "alt": "Picture of an Amsterdam neighborhood"
+        },
+        {
+          "name": "Amsterdam Areas",
+          "thumbnail": "/assets/AmsterdamArea.webp",
+          "alt": "Picture of a random area in Amsterdam"
+        }
+      ]
+    }
+  },
+
+  {
+    "name":"seasonal_event",
+    "type":"SmallSizedGroup",
+    "content":{
+      "title": "See and Do This Season",
+      "items": [
+        {
+          "title": "Reasons to visit Amsterdam in Summer",
+          "src": "/assets/amsterdam.webp",
+          "date": "November 9th, 2022"
+        },
+        {
+          "title": "Cultural Tips for Amsterdam This Summer",
+          "src": "/assets/Rijskmuseum.webp",
+          "date": "January 9th, 2023"
+        },
+        {
+          "title": "Summer Day Trips from Amsterdam",
+          "src": "/assets/Art.webp",
+          "date": "November 30th, 2022"
+        },
+        {
+          "title": "Outdoor Cinema in Amsterdam",
+          "src": "/assets/Sciencemuseum.webp",
+          "date": "November 30th, 2022"
+        },
+        {
+          "title": "Sun around the clock on these Amsterdam terraces",
+          "src": "/assets/SwanLake.webp",
+          "date": "November 30th, 2022"
+        },
+        {
+          "title": "Best outdoor sports to try in Amsterdam",
+          "src": "/assets/AmsterdamArea.webp",
+          "date": "November 30th, 2022"
+        }
+      ]
+    }
+  },
+  
+  {
+    "name":"read_more",
+    "type":"SmallSizedGroup",
+    "content":{
+      "title": "Read More",
+      "items": [
+        {
+          "title": "Reasons to visit Amsterdam in Summer",
+          "src": "/assets/amsterdam.webp",
+          "date": "November 9th, 2022"
+        },
+        {
+          "title": "Cultural Tips for Amsterdam This Summer",
+          "src": "/assets/Rijskmuseum.webp",
+          "date": "January 9th, 2023"
+        },
+        {
+          "title": "Summer Day Trips from Amsterdam",
+          "src": "/assets/Art.webp",
+          "date": "November 30th, 2022"
+        },
+        {
+          "title": "Outdoor Cinema in Amsterdam",
+          "src": "/assets/Sciencemuseum.webp",
+          "date": "November 30th, 2022"
+        },
+        {
+          "title": "Sun around the clock on these Amsterdam terraces",
+          "src": "/assets/SwanLake.webp",
+          "date": "November 30th, 2022"
+        },
+        {
+          "title": "Best outdoor sports to try in Amsterdam",
+          "src": "/assets/AmsterdamArea.webp",
+          "date": "November 30th, 2022"
+        }
+      ]
+    }
+  }
+]
