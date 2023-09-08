@@ -10,7 +10,7 @@ export interface EventContent {
 
 export interface MediumSizedContent {
   headline: string;
-  contents: EventContent[];
+  items: EventContent[];
 }
 
 interface MediumSizedGroupProps {
@@ -24,7 +24,7 @@ const MediumSizedGroup: React.FC<MediumSizedGroupProps> = ({ content }) => {
         {content.headline}
       </h1>
       <ul className="grid grid-flow-col gap-4">
-        {content.contents.map((event, index) => (
+        {content.items.map((event, index) => (
           <li key={index}>
             <NewsCard
               title={event.title}

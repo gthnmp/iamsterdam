@@ -1,157 +1,184 @@
+[
+  {
+    "name":"headline",
+    "type":"Header",
+    "content":{
+      "title": ["What's On", "In Amsterdam"],
+      "paragraph":"Check out what’s on in Amsterdam with our complete guide to events and entertainment. As a world-renowned capital of culture, you’ll find theatre performances, festivals, nightlife, sports events and exhibitions to inspire you. Search the agenda for something specific, or browse our highlights and recommendations to start you off.",
+      "heroImageSrc": "/assets/SwanLake.webp",
+      "heroImageAlt": "Photography of a painting of Van Gogh in a museum",
+      "heroImageDimension":[1280, 1920]
+    }
+  },
+  
+  {
+    "name":"editorial_guides",
+    "type":"MediumSizedGroup",
+    "content":{
+      "headline": "Editorial Guides",
+      "items": [
+        {
+          "title": "Weekend Guide (1 - 3 September)",
+          "thumbailSrc": "/assets/SwanLake.webp",
+          "alt": "Picture of a ballet show"
+        },
+        {
+          "title": "Cultural Guide (September 2023)",
+          "thumbailSrc": "/assets/Art.webp",
+          "alt": "Picture of art exhibition"
+        },
+        {
+          "title": "Music Guide (September 2023)",
+          "thumbailSrc": "/assets/Rijskmuseum.webp",
+          "alt": "Picture of museum exhibition"
+        },
+        {
+          "title": "New in Town (September 2023)",
+          "thumbailSrc": "/assets/Sciencemuseum.webp",
+          "alt": "Picture of science museum"
+        }
+      ]
+    }
+  },
 
-{
-  "headline":{
-    "title": ["What's On", "In Amsterdam"],
-    "paragraph":"Check out what’s on in Amsterdam with our complete guide to events and entertainment. As a world-renowned capital of culture, you’ll find theatre performances, festivals, nightlife, sports events and exhibitions to inspire you. Search the agenda for something specific, or browse our highlights and recommendations to start you off.",
-    "heroImageSrc": "/assets/SwanLake.webp",
-    "heroImageAlt": "Photography of a painting of Van Gogh in a museum",
-    "heroImageDimension":[1280, 1920]
+  {
+    "name":"top_picks",
+    "type":"MediumSizedGroup",
+    "content":{
+      "headline": "Top Picks This Season",
+      "items": [
+        {
+          "title": "Dekmantel Festival",
+          "thumbailSrc": "/assets/SwanLake.webp",
+          "alt": "Picture of a ballet show",
+          "location":"The Amsterdamse Bos"
+        },
+        {
+          "title": "Milkshake Festival",
+          "thumbailSrc": "/assets/Art.webp",
+          "alt": "Picture of art exhibition",
+          "location":"Westergas"
+        },
+        {
+          "title": "Grachtenfestival Amsterdam",
+          "thumbailSrc": "/assets/Rijskmuseum.webp",
+          "alt": "Picture of museum exhibition"
+        },
+        {
+          "title": "Vondelpark Open Air Theatre",
+          "thumbailSrc": "/assets/Sciencemuseum.webp",
+          "alt": "Picture of science museum",
+          "location":"Vondelpark Open Air Theatre"
+        }
+      ]
+    }
   },
-  
-  "editorialGuides": {
-    "headline": "Editorial Guides",
-    "contents": [
-      {
-        "title": "Weekend Guide (1 - 3 September)",
-        "thumbailSrc": "/assets/SwanLake.webp",
-        "alt": "Picture of a ballet show"
-      },
-      {
-        "title": "Cultural Guide (September 2023)",
-        "thumbailSrc": "/assets/Art.webp",
-        "alt": "Picture of art exhibition"
-      },
-      {
-        "title": "Music Guide (September 2023)",
-        "thumbailSrc": "/assets/Rijskmuseum.webp",
-        "alt": "Picture of museum exhibition"
-      },
-      {
-        "title": "New in Town (September 2023)",
-        "thumbailSrc": "/assets/Sciencemuseum.webp",
-        "alt": "Picture of science museum"
-      }
-    ]
+
+  {
+    "name":"amsterdam_areas",
+    "type":"LargeSizedGroup",
+    "content":{
+      "headline": "Explore all corners of amsterdam",
+      "subHeadline": "More than just The Canal Ring",
+      "items": [
+        {
+          "name": "Neighborhood",
+          "thumbnail": "/assets/amsterdam.webp",
+          "alt": "Picture of an Amsterdam neighborhood"
+        },
+        {
+          "name": "Amsterdam Areas",
+          "thumbnail": "/assets/AmsterdamArea.webp",
+          "alt": "Picture of a random area in Amsterdam"
+        }
+      ]
+    }
   },
-  
-  "topPicks": {
-    "headline": "Top Picks This Season",
-    "contents": [
-      {
-        "title": "Dekmantel Festival",
-        "thumbailSrc": "/assets/SwanLake.webp",
-        "alt": "Picture of a ballet show",
-        "location":"The Amsterdamse Bos"
-      },
-      {
-        "title": "Milkshake Festival",
-        "thumbailSrc": "/assets/Art.webp",
-        "alt": "Picture of art exhibition",
-        "location":"Westergas"
-      },
-      {
-        "title": "Grachtenfestival Amsterdam",
-        "thumbailSrc": "/assets/Rijskmuseum.webp",
-        "alt": "Picture of museum exhibition"
-      },
-      {
-        "title": "Vondelpark Open Air Theatre",
-        "thumbailSrc": "/assets/Sciencemuseum.webp",
-        "alt": "Picture of science museum",
-        "location":"Vondelpark Open Air Theatre"
-      }
-    ]
+
+  {
+    "name":"latest_articles",
+    "type":"SmallSizedGroup",
+    "content":{
+      "title": "Our Latest Articles",
+      "items": [
+        {
+          "title": "Unusual Museum in Amsterdam",
+          "src": "/assets/amsterdam.webp",
+          "date": "September 12th, 2022"
+        },
+        {
+          "title": "Best stages for comedy and spoken word in Amsterdam",
+          "src": "/assets/Rijskmuseum.webp",
+          "date": "September 12th, 2022"
+        },
+        {
+          "title": "Amstedam's smaller music venues",
+          "src": "/assets/Art.webp",
+          "date": "September 12th, 2022"
+        },
+        {
+          "title": "Best jazz venues in Amsterdam",
+          "src": "/assets/Sciencemuseum.webp",
+          "date": "September 12th, 2022"
+        },
+        {
+          "title": "Best vinyl bars in Amsterdam",
+          "src": "/assets/SwanLake.webp",
+          "date": "September 12th, 2022"
+        },
+        {
+          "title": "English-language and surtitled theatre in Amsterdam",
+          "src": "/assets/AmsterdamArea.webp",
+          "date": "September 12th, 2022"
+        }
+      ]
+    }
   },
-  
-  "amsterdamAreasContent": {
-    "headline": "Explore all corners of amsterdam",
-    "subHeadline": "More than just The Canal Ring",
-    "items": [
-      {
-        "name": "Neighborhood",
-        "thumbnail": "/assets/amsterdam.webp",
-        "alt": "Picture of an Amsterdam neighborhood"
-      },
-      {
-        "name": "Amsterdam Areas",
-        "thumbnail": "/assets/AmsterdamArea.webp",
-        "alt": "Picture of a random area in Amsterdam"
-      }
-    ]
+
+  {
+    "name":"amsterdam_events",
+    "type":"LargeSizedGroup",
+    "content":{
+      "headline": "Amsterdam's Biggest Events and Celebrations",
+      "subHeadline": "",
+      "items": [
+        {
+          "name": "King's Day",
+          "thumbnail": "/assets/amsterdam.webp",
+          "alt": "Picture of an Amsterdam neighborhood"
+        },
+        {
+          "name": "Amsterdam Dance Event (ADE)",
+          "thumbnail": "/assets/AmsterdamArea.webp",
+          "alt": "Picture of a random area in Amsterdam"
+        }
+      ]
+    }
   },
-  
-  "articles": {
-    "title": "Our Latest Articles",
-    "items": [
-      {
-        "title": "Unusual Museum in Amsterdam",
-        "src": "/assets/amsterdam.webp",
-        "date": "September 12th, 2022"
-      },
-      {
-        "title": "Best stages for comedy and spoken word in Amsterdam",
-        "src": "/assets/Rijskmuseum.webp",
-        "date": "September 12th, 2022"
-      },
-      {
-        "title": "Amstedam's smaller music venues",
-        "src": "/assets/Art.webp",
-        "date": "September 12th, 2022"
-      },
-      {
-        "title": "Best jazz venues in Amsterdam",
-        "src": "/assets/Sciencemuseum.webp",
-        "date": "September 12th, 2022"
-      },
-      {
-        "title": "Best vinyl bars in Amsterdam",
-        "src": "/assets/SwanLake.webp",
-        "date": "September 12th, 2022"
-      },
-      {
-        "title": "English-language and surtitled theatre in Amsterdam",
-        "src": "/assets/AmsterdamArea.webp",
-        "date": "September 12th, 2022"
-      }
-    ]
-  },
-  
-  "amsterdamEvent": {
-    "headline": "Amsterdam's Biggest Events and Celebrations",
-    "subHeadline": "",
-    "items": [
-      {
-        "name": "King's Day",
-        "thumbnail": "/assets/amsterdam.webp",
-        "alt": "Picture of an Amsterdam neighborhood"
-      },
-      {
-        "name": "Amsterdam Dance Event (ADE)",
-        "thumbnail": "/assets/AmsterdamArea.webp",
-        "alt": "Picture of a random area in Amsterdam"
-      }
-    ]
-  },
-  
-  "discoverAmsterdam": {
-    "title": "Discover Amsterdam with the I amsterdam City Card",
-    "items": [
-      {
-        "title": "Reasons to visit Amsterdam in Summer",
-        "src": "/assets/amsterdam.webp",
-        "date": "November 30th, 2022"
-      },
-      {
-        "title": "Cultural tips for Amsterdam this summer",
-        "src": "/assets/Rijskmuseum.webp",
-        "date": "November 30th, 2022"
-      },
-      {
-        "title": "Summer day trips from Amsterdam",
-        "src": "/assets/Art.webp",
-        "date": "November 30th, 2022"
-      }
-    ]
+
+  {
+    "name":"discover_amsterdam",
+    "type":"SmallSizedGroup",
+    "content":{
+      "title": "Discover Amsterdam with the I amsterdam City Card",
+      "items": [
+        {
+          "title": "Reasons to visit Amsterdam in Summer",
+          "src": "/assets/amsterdam.webp",
+          "date": "November 30th, 2022"
+        },
+        {
+          "title": "Cultural tips for Amsterdam this summer",
+          "src": "/assets/Rijskmuseum.webp",
+          "date": "November 30th, 2022"
+        },
+        {
+          "title": "Summer day trips from Amsterdam",
+          "src": "/assets/Art.webp",
+          "date": "November 30th, 2022"
+        }
+      ]
+    }
   }
-}
-
+  
+]

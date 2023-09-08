@@ -34,7 +34,7 @@ const Navbar = () => {
           </li>
           
           <li className="font-semibold flex gap-2 items-center"><Link href="/whats-on">What's on</Link><SlArrowDown/></li>
-          <li className="font-semibold flex gap-2 items-center"><a href="/">See and do</a><SlArrowDown/></li>
+          <li className="font-semibold flex gap-2 items-center"><a href="/see-and-do">See and do</a><SlArrowDown/></li>
           <li className="font-semibold flex gap-2 items-center"><a href="/">Travel and stay</a><SlArrowDown/></li>
           <li className="font-semibold flex gap-2 items-center"><a href="/">City Card and tickets</a><SlArrowDown/></li>
         </ul>
