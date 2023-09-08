@@ -1,0 +1,153 @@
+[
+  {
+    "name":"headline",
+    "type":"Header",
+    "content":{
+      "title": ["Travel", "and Stay"],
+      "paragraph":"Planning a trip to Amsterdam? Below you'll find all the resources you need to get started – from accommodation to renting a bike or using public transport.",
+      "heroImageSrc": "/assets/Sciencemuseum.webp",
+      "heroImageAlt": "Photography of a painting of Van Gogh in a museum",
+      "heroImageDimension":[1280, 1920]
+    }
+  },
+
+  {
+    "name":"suggestions",
+    "type":"LargeSizedGroup",
+    "content":{
+      "headline": "Trip Essentials",
+      "items": [
+        {
+          "name": "Travel to Amsterdam",
+          "thumbnail": "/assets/Neighboorhood.webp",
+          "alt": "Picture of an Amsterdam neighborhood"
+        },
+        {
+          "name": "Getting Around",
+          "thumbnail": "/assets/hero.webp",
+          "alt": "Picture of a random area in Amsterdam"
+        },
+        {
+          "name": "Where to stay",
+          "thumbnail": "/assets/amsterdam.webp",
+          "alt": "Picture of a random area in Amsterdam"
+        }
+      ]
+    }
+  },
+
+  {
+    "name":"travel_to_amsterdam",
+    "type":"SmallSizedGroup",
+    "content":{
+      "title": "Travel to Amsterdam",
+      "items": [
+        {
+          "title": "Arrival by plane",
+          "src": "/assets/amsterdam.webp",
+          "date": "November 9th, 2022"
+        },
+        {
+          "title": "Arrival by train",
+          "src": "/assets/Rijskmuseum.webp",
+          "date": "January 9th, 2023"
+        },
+        {
+          "title": "Arrival by car",
+          "src": "/assets/Art.webp",
+          "date": "November 30th, 2022"
+        }
+      ]
+    }
+  },
+  
+  {
+    "name":"getting_around",
+    "type":"SmallSizedGroup",
+    "content":{
+      "title": "Getting Around",
+      "items": [
+        {
+          "title": "Arrival by plane",
+          "src": "/assets/amsterdam.webp",
+          "date": "November 9th, 2022"
+        },
+        {
+          "title": "Arrival by train",
+          "src": "/assets/Rijskmuseum.webp",
+          "date": "January 9th, 2023"
+        },
+        {
+          "title": "Arrival by car",
+          "src": "/assets/Art.webp",
+          "date": "November 30th, 2022"
+        }
+      ]
+    }
+  },
+  
+  {
+    "name":"stay",
+    "type":"SmallSizedGroup",
+    "content":{
+      "title": "Where to stay",
+      "items": [
+        {
+          "title": "Arrival by plane",
+          "src": "/assets/amsterdam.webp",
+          "date": "November 9th, 2022"
+        },
+        {
+          "title": "Arrival by train",
+          "src": "/assets/Rijskmuseum.webp",
+          "date": "January 9th, 2023"
+        },
+        {
+          "title": "Arrival by car",
+          "src": "/assets/Art.webp",
+          "date": "November 30th, 2022"
+        }
+      ]
+    }
+  },
+  
+  {
+    "name":"info_for_travelers",
+    "type":"SmallSizedGroup",
+    "content":{
+      "title": "Practival Information for Travelers",
+      "items": [
+        {
+          "title": "Arrival by plane",
+          "src": "/assets/amsterdam.webp",
+          "date": "November 9th, 2022"
+        },
+        {
+          "title": "Arrival by train",
+          "src": "/assets/Rijskmuseum.webp",
+          "date": "January 9th, 2023"
+        },
+        {
+          "title": "Arrival by car",
+          "src": "/assets/Art.webp",
+          "date": "November 30th, 2022"
+        },
+        {
+          "title": "Arrival by plane",
+          "src": "/assets/amsterdam.webp",
+          "date": "November 9th, 2022"
+        },
+        {
+          "title": "Arrival by train",
+          "src": "/assets/Rijskmuseum.webp",
+          "date": "January 9th, 2023"
+        },
+        {
+          "title": "Arrival by car",
+          "src": "/assets/Art.webp",
+          "date": "November 30th, 2022"
+        }
+      ]
+    }
+  }
+]
