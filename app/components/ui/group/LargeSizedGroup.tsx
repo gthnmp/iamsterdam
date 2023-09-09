@@ -29,7 +29,7 @@ const LargeSizedGroup: React.FC<Props> = ({ content }) => {
         <ul className="grid grid-flow-col gap-4">
           {content.items.map((item, index) => (
             <li key={index} className="flex flex-col gap-2">
-              <div className="aspect-square w-96 h-auto bg-red-700 rounded-md">
+              <div className="aspect-square w-96 h-auto bg-red-700 rounded-md overflow-hidden">
                 <Image src={item.thumbnail} alt={item.alt} height={1920} width={1280} className='w-full h-full object-cover'/>
               </div>
               <div className='w-full h-max flex justify-between items-center'>

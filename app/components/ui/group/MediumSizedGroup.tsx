@@ -23,7 +23,7 @@ const MediumSizedGroup: React.FC<MediumSizedGroupProps> = ({ content }) => {
       <h1 className="text-2xl font-bold">
         {content.headline}
       </h1>
-      <ul className="grid grid-flow-col gap-4">
+      <ul className="flex justify-between gap-4">
         {content.items.map((event, index) => (
           <li key={index}>
             <NewsCard

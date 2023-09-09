@@ -4,6 +4,7 @@
     "type":"Header",
     "content":{
       "title": ["Travel", "and Stay"],
+      "noBreakLine":true,
       "paragraph":"Planning a trip to Amsterdam? Below you'll find all the resources you need to get started – from accommodation to renting a bike or using public transport.",
       "heroImageSrc": "/assets/Sciencemuseum.webp",
       "heroImageAlt": "Photography of a painting of Van Gogh in a museum",

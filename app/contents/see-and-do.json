@@ -4,6 +4,7 @@
     "type":"Header",
     "content":{
       "title": ["See", "and do"],
+      "noBreakLine":true,
       "paragraph":"With world-class museums, quirky festivals, theatre, live music, laid-back bars and delightful restaurants, there's never a shortage of things to do in Amsterdam! Take in an exhibition at a famous museum, relax in one of the parks or go on a canal cruise. And don't miss ticking off the top 20 things to do in Amsterdam!",
       "heroImageSrc": "/assets/Rijskmuseum.webp",
       "heroImageAlt": "Photography of a painting of Van Gogh in a museum",

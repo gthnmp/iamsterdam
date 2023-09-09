@@ -1,0 +1,61 @@
+[
+  {
+    "name":"headline",
+    "type":"Header",
+    "content":{
+      "title": ["City Card", "& Tickets"],
+      "paragraph":"Book tickets and passes for activities within Amsterdam and the area with the I amsterdam City Card, I amsterdam Canal Cruise Ticket and the Amsterdam & Region Travel Ticket.",
+      "containerHeight":"h-max"
+    }
+  },
+  {
+    "name":"Explore Amsterdam",
+    "type":"LargeSizedGroup",
+    "content":{
+      "headline": "Explore Amsterdam",
+      "subHeadline": "Explore witt out tickets and passes",
+      "items": [
+        {
+          "name": "I amsterdam City Card",
+          "thumbnail": "/assets/amsterdam.webp",
+          "alt": "Picture of an Amsterdam neighborhood"
+        },
+        {
+          "name": "Canal Cruise Ticket",
+          "thumbnail": "/assets/AmsterdamArea.webp",
+          "alt": "Picture of a random area in Amsterdam"
+        },
+        {
+          "name": "Amsterdam & Regio Travel Ticket",
+          "thumbnail": "/assets/AmsterdamArea.webp",
+          "alt": "Picture of a random area in Amsterdam"
+        }
+      ]
+    }
+  },
+  
+  {
+    "name":"Ticket Promotion",
+    "type":"PromotionSection",
+    "content":{
+      "title":["Get your key"," to the City of Amsterdam"],
+      "subtitle":"A special way to see Amsterdam",
+      "list":[
+        "Free city-wide public transport by metro, tram, bus, and ferry",
+        "Unique boat cruise over Amsterdam's historic canals",
+        "Exclusive discounts at restaurants, attractions, and concerts"
+      ],
+      "link":{
+        "href":"https://www.instagram.com/iamsterdam/",
+        "text":"See All Benefits"
+      },
+      "image":{
+        "src":"/assets/Neighboorhood.webp",
+        "alt":"Photography of an Amsterdam neighborhood",
+        "width":1920,
+        "height":1280
+      }
+    }
+  }
+    
+]
