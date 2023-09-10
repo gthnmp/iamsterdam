@@ -8,13 +8,13 @@ type SmallSizeGroupItem = {
   date : string;
 }
 
-export interface SmallSizeGroupContent {
+export interface SmallSizedGroupContent {
   title : string;
   items : SmallSizeGroupItem[]
 }
 
 interface Prop {
-  content : SmallSizeGroupContent;
+  content : SmallSizedGroupContent;
   gridSize? : number;
 }
 

@@ -6,6 +6,8 @@
   display: none;
 }
 
+
+/* UNDERLINE ANIMATION ON NAVBAR TEXT */
 .main-navigation {
   position: relative;
   overflow: hidden;
@@ -26,3 +28,37 @@
 .main-navigation:hover::after {
   transform: translateX(0%);
 }
+
+
+/* UNDERLINE ANIMATION ON NAVBAR CONTAINER */
+.main-navigation-container {  
+  position: relative;
+  overflow: hidden;
+}
+
+.main-navigation-container::after{
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.main-navigation-container:hover::after {
+  opacity: 1;
+  transition: opacity 250ms;
+}
+
+/* NAVBAR HOVER REVEAL */
+/* .reveal { */
+/*   transition: height 500ms; */
+/* } */
+/**/
+/* nav:hover > .reveal{ */
+/*   height: 30rem; */
+/* } */
+
