@@ -1,5 +1,4 @@
 "use client"
-import { log } from 'console';
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 import { AiOutlineSearch, AiOutlineHeart  } from 'react-icons/ai'
@@ -83,7 +82,6 @@ const Navbar = () => {
   
   return (
     <>
-      <Top/>
       <nav className="sticky top-0 h-max pointer-events-none border-b-neutral-200 border-b-2 bg-white w-screen z-50">
         <div className="w-full flex justify-between h-28 px-4"> 
           <ul className="flex gap-8 items-center h-full text-md select-none pointer-events-auto">
@@ -121,11 +119,12 @@ const Navbar = () => {
           </ul>
         </div>
         
-      <div
-        ref={expandedNavbar}
-        className={`bg-white w-screen absolute reveal transition-height duration-300`}
-        style={{ height: revealHeight }}
-      ></div>
+        <div
+          ref={expandedNavbar}
+          className={`bg-white w-screen absolute reveal transition-height duration-300 shadow-2xl`}
+          style={{ height: revealHeight }}
+        >
+        </div>
       </nav>
     </>
   );
